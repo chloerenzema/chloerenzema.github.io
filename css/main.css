@@ -282,20 +282,8 @@ footer .right {
 \*------------------------------------*/
 @media only screen and (max-width: 1280px),
 only screen and (max-device-width: 1280px) {
-    header {
-        height: 300px;
-        background-size: 100% auto;
-    }
-    .header-title {
-        top: 125px;
-    }
-    
-    .product-wrapper,
-    .about-wrapper,
-    .map-wrapper,
     .footer-wrapper {
-        width: 100%;
-        margin: 0px auto;
+        padding: 0px 10px;
     }
 }
 
@@ -303,6 +291,11 @@ only screen and (max-device-width: 1280px) {
 only screen and (max-device-width: 700px) {
     .column {
         width: 50%;
+    }
+    
+    footer {
+        position: relative;
+        bottom: auto;
     }
 }
 
@@ -340,16 +333,6 @@ only screen and (max-device-width: 500px) {
         height: 200px;
         background-size: 150px auto;
     }
-
-    
-    .about-wrapper {
-        width: 320px;
-        margin: 0px auto;
-    }
-    .about-wrapper p {
-        padding: auto 15px;
-        margin: auto 15px;
-    }
     
     .modal-wrapper { 
         width: 100% !important; 
@@ -367,12 +350,14 @@ only screen and (max-device-width: 500px) {
         left: 0px;
     }
     
-    footer { padding: 0px; }
-    .footer-block { 
+    footer { padding: 10px; }
+    footer div { 
         text-align: center; 
         width: 100% !important;
         padding: 0px;
     }
+    footer div.right {
+        padding: 0px 20px;
 }
 @media only screen and (max-device-width: 500px) { 
     body { width: 320px; }
