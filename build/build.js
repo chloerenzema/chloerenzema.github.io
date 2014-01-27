@@ -5799,11 +5799,12 @@ $image.on('click', function(e) { \n\
     }\n\
 }); \n\
 \n\
+var rndm = Math.floor(Math.random()*6);\n\
 setTimeout(function(){\n\
     $loading.css('display', 'none');\n\
     $work.css('visibility', 'visible');\n\
     $work.addClass('fade-in');\n\
-}, 5000);//@ sourceURL=chrisanderson/components/index.js"
+}, rndm*1000);//@ sourceURL=chrisanderson/components/index.js"
 ));
 
 
